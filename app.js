@@ -32,15 +32,6 @@ app.get('/delay/:delayInSeconds', (request, response) => {
 
 // =========================ERROR HANDLING=====================================
 
-// app.use((error, request, response, next) => {
-//   error.statusCode = error.statusCode || 500;
-//   error.status = error.status || 'error';
-//   response.set(error.statusCode).json({
-//     status: error.statusCode,
-//     message: error.message,
-//   });
-// });
-
 app.listen(8080, (error) => {
   if (error) console.log("Couldn't start the server");
   console.log('Server has been started on port 8080');
